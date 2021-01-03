@@ -59,7 +59,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 //Habilita a classe Template de application->libraries->Template.php
-$autoload['libraries'] = array('template');
+$autoload['libraries'] = array('template','database','session');
 
 /*
 | -------------------------------------------------------------------

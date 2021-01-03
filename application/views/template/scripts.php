@@ -14,6 +14,18 @@
   <!-- Template Main JS File -->
   <script src="<?php echo base_url()?>public/assets/js/main.js"></script>
 
+    <?php
+    if(isset($scripts)){
+      foreach ($scripts as $script_name) {
+        $src=base_url()."public/assets/js/".$script_name;?>
+
+        <script src="<?php echo $src?>"></script>
+
+<?php
+      }
+    }
+  ?>
+
 </body>
 
 </html>

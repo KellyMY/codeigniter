@@ -1,0 +1,58 @@
+create table list(
+	list_id bigint not null auto_increment,
+    primary key(list_id),
+    list_name varchar(500) not null,
+    list_img1 varchar(1000),
+    list_img2 varchar(1000),
+    list_img3 varchar(1000),
+    list_genre varchar(500),
+    list_first_year year,
+    list_last_year year,
+    list_manga boolean,
+    list_anime boolean,
+list_description varchar(1000) not null,
+    list_light_novel boolean,
+    list_live_action boolean,
+    list_num_episodes int,
+    list_num_ovas int,
+    list_num_films int,
+    list_status varchar(20),
+    list_illustrator_name varchar(100),
+    list_studio_name varchar (100)
+);
+
+create table list_descrip(
+	desc_list_id bigint not null,
+    FOREIGN key(desc_list_id) references list(list_id),
+    item_specific_id bigint  not null auto_increment,
+    primary key(item_specific_id),
+    specific_name varchar(500) not null,
+    desc_list_num_episodes int,
+    desc_list_num_ovas int,
+    desc_list_num_films int,
+    desc_list_season int,
+    desc_list_num_order int,
+    desc_list_year int,
+    desc_list_description varchar(1000) not null,
+    desc_list_img int,
+    desc_list_anime boolean,
+    desc_list_manga boolean,
+    desc_list_light_novel boolean,
+    desc_list_live_action boolean,
+desc_list_tipo varchar(20)
+
+);
+create table team(
+	member_id int,
+	member_name varchar(100),
+	member_photo varchar(200),
+	member_description varchar(1000)
+);
+
+
+
+
+
+https://wallpapercave.com/wp/wp8001408.jpg
+https://wallpapercave.com/wp/wp6085094.jpg
+https://images.wallpapersden.com/image/download/jujutsu-kaisen-4k_bGhlZmqUmZqaraWkpJRnamtlrWZpaWU.jpg
