@@ -1,0 +1,1 @@
+<link href="<?php echo base_url();?>public/assets/css/style.css" rel="stylesheet">

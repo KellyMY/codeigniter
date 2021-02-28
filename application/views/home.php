@@ -50,8 +50,10 @@
     </div>
   </section><!-- End Why Us Section -->
 
+
+
   <!-- ======= Services Section ======= -->
-  <section id="services" class="services section-bg">
+  <!--<section id="services" class="services section-bg">
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
@@ -102,8 +104,8 @@
           <div class="box">
             <div class="icon" style="background: #ecebff;"><img src="<?php echo base_url();?>public/assets/img/team-4.jpg" class="rounded mx-auto d-block"style="max-width: 100%; 
             height: auto; 
-            display:block;"  alt="quixote"><!--<i class="ion-ios-clock-outline" style="color: #8660fe;"></i>--></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            display:block;"  alt="quixote">--><!--<i class="ion-ios-clock-outline" style="color: #8660fe;"></i>--></div>
+           <!-- <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
           </div>
         </div>
@@ -111,6 +113,105 @@
       </div>
 
     </div>
-  </section><!-- End Services Section -->
+  </section>--><!-- End Services Section -->
 
   </main><!-- End #main -->
+
+  <input type="checkbox" id="switch" />
+
+  <div class="container-fluid">
+  <h1 class="text-center mb-3">Bootstrap Multi-Card Carousel</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner row w-100 mx-auto">
+      <div class="carousel-item col-md-3 active">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card 1</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card 2</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card 3</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card 4</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f49b41/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card 5</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card 6</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/8e41f4/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card 7</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<label class="flip-container" for="switch" >
+  <div class="flipper">
+    <div class="front">
+      <img src="https://picsum.photos/id/411/300/200" />
+    </div>
+    <div class="back">
+      <img src="https://picsum.photos/id/249/300/200" />
+    </div>
+  </div>
+</label>

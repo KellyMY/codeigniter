@@ -1,4 +1,18 @@
 $(function(){
+	// importaç~~ao de imagem
+	$("#upload_img").change(function(){
+		uploadImg($(this), $("#img_path"), $("#img_img"));
+	})
+	$("#upload_img1").change(function(){
+		uploadImg($(this), $("#img_path1"), $("#img_img1"));
+	})
+	$("#upload_img2").change(function(){
+		uploadImg($(this), $("#img_path2"), $("#img_img2"));
+	})
+	$("#upload_imge").change(function(){
+		uploadImg($(this), $("#img_pathe"), $("#img_imge"));
+	})
+
 	$('#btn_add_list').click(function(){
 		
 		clearErrors();
@@ -35,4 +49,6 @@ $(function(){
 		})
 		return false;
 	})
+
+
 })

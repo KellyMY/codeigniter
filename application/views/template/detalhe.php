@@ -55,36 +55,13 @@
           </p>
         </div>
 
-        <div class="row">
-          <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-              <a class="list-group-item list-group-item-action active" id="list-prince-list" data-toggle="list" href="#list-prince" role="tab" aria-controls="prince">The Little Prince
-                <div class="image-parent">
-                  <img src="<?php echo base_url();?>public/assets/img/team-4.jpg" class="rounded mx-auto d-block"style="max-width: 20%; float: right; 
-  height: auto; 
-  display:block;"  alt="quixote">
-                </div>
-              </a>
-              <a class="list-group-item list-group-item-action" id="list-wild-list" data-toggle="list" href="#list-wild" role="tab" aria-controls="wild">Where the Wild Things Are</a>
-              <a class="list-group-item list-group-item-action" id="list-solitude-list" data-toggle="list" href="#list-solitude" role="tab" aria-controls="messages">One Hundred Years of Solitude</a>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="list-prince" role="tabpanel" aria-labelledby="list-prince-list">1</div>
-              <div class="tab-pane fade" id="list-wild" role="tabpanel" aria-labelledby="list-wild-list">2</div>
-              <div class="tab-pane fade" id="list-solitude" role="tabpanel" aria-labelledby="list-solitude-list">3</div>
-            </div>
-          </div>
-        </div>
-
+       
          <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h3>Services</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          <h3>Series</h3>
         </header>
 
         <div class="row">

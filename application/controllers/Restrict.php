@@ -51,7 +51,7 @@ class Restrict extends CI_Controller {
 
 		if(empty($username)){
 			$json["status"] = 0;
-			$json['error_list']['#username'] = "Usuário não de ser vazio!";
+			$json['error_list']['#username'] = "Usuário não deve ser vazio!";
 		}else{
 			$this->load->model("users_model");
 			$result = $this->users_model->get_user_data($username);
@@ -109,6 +109,36 @@ class Restrict extends CI_Controller {
 			}
 		}
 	
+	}
+
+	public function ajax_import_image(){
+
+		if(!$this->input->is_ajax_request()){
+			exit("Nenhum acesso de script dereto permitido!");
+		}
+
+		$config["upload_path"] = "./public/assets/tmp/";
+		$config["allowed_types"] = "gif|png|jpg|jpeg";
+		$config["overwrite"] = TRUE;
+		
+		$this->load->library("upload", $config);
+		$json = array();
+		$json["status"] = 1;
+		
+		if(!$this->upload->do_upload("image_file")){
+			$json["status"] = 0;
+			$json["error"] = $this->upload->display_errors("","");
+			$json["error"] .= "<br>Aceito apenas nos formatos gif, png, jpg e jpeg";
+		}else{
+			if($this->upload->data()["file_size"] <= 4000){
+				$file_name = $this->upload->data()["file_name"];
+				$json["img_path"] = base_url() . "public/assets/tmp/" . $file_name;
+			}else{
+				$json["status"] = 0;
+				$json["error"] = "Arquivo não deve ser maior que 4 MB";
+			}
+		}
+		echo json_encode($json);
 	}
 
 }
